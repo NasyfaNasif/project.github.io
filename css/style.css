@@ -1,0 +1,413 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #333;
+    overflow-x: hidden;
+    min-width: 320px;
+    font-weight: 400;
+
+}  
+header {
+    background: #1c1d21;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}  
+header h1 {
+    padding: 20px 60px;
+    color: #fff;
+    font-size: 80px;
+}
+header nav {
+    margin-right: 5% ;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+}
+header nav a {
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+div.mobile{
+    height: 500px;
+    width: 250px;
+    background: pink;
+    overflow: scroll;
+    position:absolute;
+    right: 0;
+    display: none;
+}
+div#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+div.mobile::-webkit-scrollbar {
+    width: 0px; 
+}
+
+div.mobile li{
+    width: 115px;
+}
+div.mobile li img{
+    width: 100%;
+}
+div.mobile ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+#menu{
+    position:absolute;
+    z-index: 1;
+    top: 49px;
+}
+header nav a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 15px;
+    
+}
+
+main{
+    padding: 0px;
+    background: #16171d;
+    display: flex;
+    align-items: center;
+}
+main div.item {
+    display: flex;
+}
+main div.item ul {
+    margin: 10px;
+    list-style: none;
+}
+main div.item ul li {
+    margin-bottom: 10px;
+}  
+main div.item ul li h2 {
+    font-size: 24px;
+    color: #fff;
+}
+#spotlight {
+    padding: 40px;
+    width: 100%;
+    height: 60vh;
+    background: url("../images/girl.jpg") no-repeat;
+    background-size: cover;
+}
+#spotlight h3 {
+    padding: 16px 22px;
+    margin-left: 70%;
+    display: inline-block;
+    background: #f5245f;
+    color: #fff;
+    font-size: 47px;
+    margin-bottom: 10px;
+}
+
+#spotlight p {
+    background: #16171d;
+    display: inline-flex;
+    font-size: 25px;
+    color: #fff;
+    margin-left: 70%;
+    padding-left: 16px 22px;
+    margin-top: -10%;
+}
+.content {
+    background: #333;
+    padding-left: 10px;
+}
+.content ul {
+    display: flex;
+}
+.content ul li {}
+.content ul li h2 {
+    padding-left: 150%;
+    font-size: 40px;
+    color: #f5245f;
+}
+.content ul li img {
+    padding-left: 40px;
+    width: 550px;
+}
+.content ul li p {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+.content ul li a {
+    font-size: 10px;
+    color: #f5245f;
+    margin-bottom: 10px;
+}
+.content ul li a img {
+    width: 15px;
+}
+.content ul li button {
+    border-radius: 50px;
+
+}
+#quote {
+    display: flex;
+    background: url("../images/happy.jpg");
+    background-size: cover;
+    padding-top: 350px;
+}
+#quote div.contents {
+    padding: 70px 0;
+}
+#quote div.contents h2 {
+    padding-left: 80%;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
+#quote div.contents p {
+    padding-left: 60px;
+}
+#quote div.contents p b {
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+
+#promo{
+    padding: 70px 0;
+}
+#promo section.wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+#promo section.wrapper div.img-container {
+    width: 100px;
+}
+#promo section.wrapper div.img-container img {
+}
+#promo section.wrapper div.content_box {
+    padding-left: 150px;
+}
+#promo section.wrapper div.content_box h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+#promo section.wrapper div.content_box h1 b {
+    font-size: 50px;
+    color:#e74487 ;
+}
+#promo section.wrapper div.content_box p {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 20px;
+}
+#promo section.wrapper div.content_box button {
+    border-radius: 50px;
+    padding: 15px 30px;
+    background: #e74487;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+#promo section.wrapper div.content_box button img {
+    padding-left: 10px;
+    width: 10px;
+}
+#press{
+    padding: 70px 0;
+}
+#press section.wrapper {
+    display: flex;
+    gap: 10px;
+}
+#press section.wrapper div.content_box h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+#press section.wrapper div.content_box h1 b {
+    font-size: 50px;
+    color: #6b8795;
+}
+#press section.wrapper div.content_box p {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 20px;
+}
+#press section.wrapper div.content_box button {
+    border-radius: 50px;
+    padding: 15px 30px;
+    background:#6b8795 ;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+#press section.wrapper div.content_box button img {
+    padding-left: 10px;
+    width: 10px;
+}
+#press section.wrapper div.img-container {
+    width: 100px;
+}
+#press section.wrapper div.img-container img {
+}
+#press section.wrapper div.content_box {
+    padding-left: 150px;
+} */
+footer {
+    padding: 60px ;
+}
+footer section.top {
+    display: flex;
+    gap: 120px;
+}
+footer section.top {
+    margin-bottom: 50px;
+}
+footer section.top div.item h5{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+footer section.top div.item ul {}
+footer section.top div.item ul li {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+footer section.top div.item ul li a{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #86acda;
+    margin-bottom: 20px;
+}
+footer section.top div.item ul a img {
+    width: 30px;
+    gap: 30px;
+    border-radius: 20px;
+}
+
+@media all and (max-width:1814px){
+    #spotlight {
+        padding: 0px;
+        width: 100%;
+        height: 60vh;
+        background: url(../images/girl.jpg) no-repeat;
+        background-size: cover;
+    }
+    .content ul li h2 {
+        padding-left: 47%;
+        font-size: 40px;
+        color: #f5245f;
+    }
+}
+@media all and (min-width:1440px) and (max-width:1813px){
+    .content ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media all and (min-width:1024px) and (max-width:1439px){
+    .content ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #spotlight h3 {
+        padding: 16px 22px;
+        margin-left: 0%;
+        display: inline-block;
+        background: #f5245f;
+        color: #fff;
+        font-size: 47px;
+        margin-bottom: 0px;
+    }
+    #spotlight p {
+        background: #16171d;
+        display: inline-flex;
+        font-size: 25px;
+        color: #fff;
+        margin-left: 0px;
+        padding-left: 16px 22px;
+        margin-top: 0px;
+    }
+    #spotlight {
+        padding: 0px;
+        width: 100%;
+        height: 60vh;
+        background: url(../images/girl.jpg) no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media all and (min-width:768px) and (max-width:1023px){
+    .content ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #spotlight h3 {
+        padding: 16px 22px;
+        margin-left: 0%;
+        display: inline-block;
+        background: #f5245f;
+        color: #fff;
+        font-size: 47px;
+        margin-bottom: 0px;
+    }
+    #spotlight p {
+        background: #16171d;
+        display: inline-flex;
+        font-size: 25px;
+        color: #fff;
+        margin-left: 0px;
+        padding-left: 16px 22px;
+        margin-top: 0px;
+    }
+    #spotlight {
+        padding: 0px;
+        width: 100%;
+        height: 60vh;
+        background: url(../images/girl.jpg) no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #press div.image-container img{
+        width: 353px;
+    }
+    footer section.top {
+        display: flex;
+        gap: 42px;
+    }
+    
+}
+
+
